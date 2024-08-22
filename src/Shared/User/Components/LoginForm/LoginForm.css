@@ -1,0 +1,83 @@
+
+.login-form {
+    height:100%;
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.login-form img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-form p.text-center {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.login-form .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-form .form-check label {
+    margin-bottom: 0;
+}
+
+.login-form .form-check .float-right {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-form .form-check .float-right:hover {
+    text-decoration: underline;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.login-form p.mt-3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form p.mt-3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-form p.mt-3 a:hover {
+    text-decoration: underline;
+}
+
+
+.error{
+    font-weight: 300;
+    color:red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

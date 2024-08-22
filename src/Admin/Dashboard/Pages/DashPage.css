@@ -1,0 +1,19 @@
+.App{
+    background: transparentwhite;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.AppGlass{
+    display: grid;
+    height: 97%;
+    width: 97%;
+    border-radius: 2rem;
+    border-color: black;
+    border-width: 5px;
+    overflow: hidden;
+    grid-template-columns: 11rem auto 20rem;
+}
