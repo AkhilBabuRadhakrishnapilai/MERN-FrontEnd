@@ -1,23 +1,22 @@
-html, body {
-    height: 100%;
-}
-
-.container-fluid{
-    height: 100%;
-    overflow-y: hidden;
-    display:flex;
-    flex-direction: column;
-}
-
-.row {
-    height: 100vh;
-    display: flex;
-}
-
-.left-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+/* Center and adjust LoginForm positioning */
+.login-row {
+    min-height: 100vh; /* Ensure full-height row for vertical centering */
+    padding-top: 6%;  /* Adjust this value to move the form further down */
+  }
+  
+  .col-md-6 {
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  
+  .col-lg-4 {
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  
+  /* Additional custom styles if needed */
+  .left-column {
+    /* Adjustments for the left-column, if needed */
+    text-align: center;
+  }
+  

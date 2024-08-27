@@ -1,0 +1,30 @@
+.container-fluid {
+    padding: 0 15px; /* Adjust padding as needed */
+}
+
+.row {
+    margin: 0; /* Remove default margin */
+}
+
+.col-md-2 {
+    padding-right: 0; /* Remove right padding */
+}
+
+.col-md-10 {
+    padding-left: 0; /* Remove left padding */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 15px; /* Space below the button */
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-container table {
+    width: 100%;
+    margin: 0; /* Ensure no extra margin */
+}

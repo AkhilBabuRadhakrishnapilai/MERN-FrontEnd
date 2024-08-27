@@ -1,6 +1,10 @@
 import React,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import AddRoutes from '../Components/AddRoutes/AddRoutes';
+import SideBar from '../../Dashboard/Components/SideBar';
+import Nav from '../../../Shared/NavAfterLogin/Pages/Nav';
+import RoutesList from '../Components/ListRoutes/RoutesList';
+import '../Pages/FlightRoutes.css';
 
 const FlightRoutes = () => {
 
@@ -15,11 +19,20 @@ const FlightRoutes = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-auto">
+        <Nav/>
+      </div>
+      <div className="row">
+        <div className="col-md-2">
+          <SideBar/>
+        </div>
+        <div className="col-md-10">
+          <div className='d-flex justify-content-between align-items-center mb-3'>
           <Button variant='primary' onClick={handleShow}>
             Add Routes
           </Button>
           <AddRoutes show={show} handleClose={handleClose}/>
+          </div>
+          <RoutesList/>
         </div>
       </div>
     </div>

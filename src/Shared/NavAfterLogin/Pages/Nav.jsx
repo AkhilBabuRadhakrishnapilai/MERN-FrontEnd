@@ -1,8 +1,8 @@
 import React from 'react';
-import '../NavBar/NavBar.css';
-import NavComponents from '../LandingPage/Components/NavComponents';
+import NavComp from '../Components/NavComp';
+import '../Pages/Nav.css';
 
-const NavBar = () => {
+const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-transparent">
     <div className="container-fluid">
@@ -14,7 +14,7 @@ const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <div className="ml-auto">
-        <NavComponents/>
+        <NavComp/>
       </div>
       
     </div>
@@ -23,4 +23,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar;
+export default Nav

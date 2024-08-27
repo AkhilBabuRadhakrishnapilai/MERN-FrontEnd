@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import '../Pages/DashPage.css';
 import SignupContext from '../../../Shared/Context/signupContext';
-import NavBar from '../../../Shared/NavBar/NavBar';
+import Nav from '../../../Shared/NavAfterLogin/Pages/Nav';
 import SideBar from '../Components/SideBar';
 
 
@@ -13,7 +13,7 @@ const DashPage = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col">
-          <NavBar/>
+          <Nav/>
         </div>
       </div>
 

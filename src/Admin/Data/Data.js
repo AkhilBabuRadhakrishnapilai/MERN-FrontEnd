@@ -4,17 +4,17 @@ export const SideBarData = [
     {
         icon : UilEstate,
         header:"Dashboard",
-        path : "/sample"
+        path : "/users/dashboard"
     },
     {
         icon :  UilPlaneFly,
         header : "Flights",
-        path : "/sample"
+        path : "/flights/add"
     },
     {
         icon :  UilTicket,
         header : "Tickets",
-        path : "/sample"
+        path : "/tickets"
     },
     {
         icon :  UilFileGraph,
@@ -24,12 +24,13 @@ export const SideBarData = [
     {
         icon :  UilDirections,
         header : "Routes",
-        path : "/sample"
-    }
-    // {
-    //     icon :  UilFileGraph,
-    //     header : "Reports"
-    // },
+        path : "/routes/add"
+    },
+    {
+        icon :  UilPlaneFly,
+        header : "Trips",
+        path :"/trips"
+    },
     // {
     //     icon :  UilFileGraph,
     //     header : "Reports"

@@ -1,0 +1,8 @@
+/* Adjust SignupForm positioning */
+.signup-column {
+    margin-top: 50px;   /* Adjust this value to move the form down */
+    margin-left: 20%;   /* Adjust this value to move the form to the right */
+  }
+  
+  /* Additional custom styles if needed */
+  

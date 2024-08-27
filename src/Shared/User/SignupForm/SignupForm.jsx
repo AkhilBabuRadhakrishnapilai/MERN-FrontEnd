@@ -22,7 +22,7 @@ const SignupForm = () => {
 
     //useContext for getting user data
     const userObj = useContext(signupContext);
-    
+    console.log(userObj,"usecontext");
     //onsumbit
     const submitHandler= async (event)=>{
         event.preventDefault();
@@ -42,12 +42,12 @@ const SignupForm = () => {
                 })
             })
             const responseData = await response.json();
-            console.log(response);
+            console.log(responseData);
             if(!response.ok){
                 throw new Error(responseData.message);
             }
             else{
-                userObj.user=responseData;
+                userObj.setUser(responseData.user);
                 navigation('/users/dashboard');
             }
         }

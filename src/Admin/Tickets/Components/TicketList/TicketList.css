@@ -1,39 +1,39 @@
-.flight-list {
+.ticket-lists {
     margin: 20px auto;
     max-width: 100%;
     padding-right: 20px;
 }
 
-.flight-list table {
+.ticket-lists table {
     width: calc(100% + 20px);
     border-collapse: collapse;
     background-color: #f8f9fa; /* Light grey background */
 }
 
-.flight-list th, .flight-list td {
+.ticket-lists th, .ticket-lists td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #dee2e6; /* Light border */
 }
 
-.flight-list th {
+.ticket-lists th {
     background-color: #343a40; /* Dark background for header */
     color: #ffffff; /* White text color */
     font-weight: bold;
 }
 
-.flight-list tr:nth-child(even) {
+.ticket-lists tr:nth-child(even) {
     background-color: #e9ecef; /* Alternate row color */
 }
 
-.flight-list .error {
+.ticket-lists .error {
     color: red;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.flight-list .edit button, 
-.flight-list .disable button {
+.ticket-lists .edit button, 
+.ticket-lists .disable button {
     background-color: #007bff; /* Bootstrap primary button color */
     color: white;
     padding: 5px 10px;
@@ -43,10 +43,10 @@
     margin-right: 10px;
 }
 
-.flight-list .disable button {
+.ticket-lists .disable button {
     background-color: #dc3545; /* Bootstrap danger button color */
 }
 
-.flight-list button:hover {
+.ticket-lists button:hover {
     opacity: 0.8;
 }

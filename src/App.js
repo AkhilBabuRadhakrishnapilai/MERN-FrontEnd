@@ -13,6 +13,8 @@ import Flight from './Admin/Flights/Pages/Flight';
 import RoutesList from './Admin/Routes/Components/ListRoutes/RoutesList';
 import AddRoutes from './Admin/Routes/Components/AddRoutes/AddRoutes';
 import FlightRoutes from './Admin/Routes/Pages/FlightRoutes';
+import TripPage from './Admin/TripDetails/Pages/TripPage';
+import TicketPage from './Admin/Tickets/Pages/TicketPage';
 
 
 function App() {
@@ -24,13 +26,21 @@ function App() {
         <Route path='/users/login' element={<LoginPage/>}></Route>
         <Route path='/users/signup' element={<Signup/>}></Route>
         <Route path='/users/dashboard' element={<DashPage/>}></Route>
+
+        <Route path='/flights/add' element={<Flight/>}></Route>
         <Route path='/flights/list' element={<FlightList/>}></Route>
         <Route path='/flights/update/:id' element={<EditFlights/>}></Route>
-        <Route path='/routes/update/:id' element={<EditRoutes/>}></Route>
-        <Route path='/sample' element={<Sample/>}></Route>
-        <Route path='/flights/add' element={<Flight/>}></Route>
-        <Route path='/routes/list' element={<RoutesList/>}></Route>
+
         <Route path='/routes/add' element={<FlightRoutes/>}></Route>
+        <Route path='/routes/update/:id' element={<EditRoutes/>}></Route>
+        <Route path='/routes/list' element={<RoutesList/>}></Route>
+
+        <Route path='/trips' element={<TripPage/>}></Route>
+
+        <Route path='/tickets' element={<TicketPage/>}></Route>
+        
+        
+        <Route path='/sample' element={<Sample/>}></Route>
       </Routes>
     </Router>
   );

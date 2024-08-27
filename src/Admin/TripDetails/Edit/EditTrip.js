@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import Button from 'react-bootstrap/Button';
+import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal';
-const AddTrip = ({show,handleClose}) => {
+import Button from 'react-bootstrap/Button';
+
+const EditTrip = ({show,handleClose,data}) => {
 
     //list of flights
     const[flights,setFlights]=useState([]);
@@ -104,41 +105,22 @@ const AddTrip = ({show,handleClose}) => {
     //selected Routes
     const[selectedRoutes,setSelectedRoutes]=useState('');
 
-    const handleSubmit =async(event)=>{
+    useEffect(()=>{
+        if(data){
+            setSelectedFlight(data.flightId);
+            setSelectedType(data.flightType);
+            setSelectedRoutes(data.id);
+            setDate(data.depDate);
+            setTime(data.depTime);
+            setArrivalDate(data.arrivalDate);
+            setArrivalTime(data.arrivalTime);
+        }
+    },[data])
+
+    const handleSubmit = (event)=>{
         event.preventDefault();
 
-        try{
-            const response = await fetch('http://127.0.0.1:5000/flights/admin/post/flightdetails',{
-                method:'POST',
-                headers:{
-                    'Content-Type':'application/json'
-                },
-                body:JSON.stringify({
-                    flightId : selectedFlight,
-                    typeId :selectedType,
-                    routeId :selectedRoutes,
-                    depDate :depDate,
-                    arrivalDate:arrivalDate,
-                    depTime : depTime,
-                    arrivalTime :arrivalTime,
-                })
-
-            })
-
-            const responseData = await response.json();
-
-            if(!response.ok){
-                throw new Error(responseData.message)
-            }
-            else{
-                handleClose();
-            }
-        }
-        catch(err){
-            console.log(err);
-        }
     }
-
   return (
     <Modal
     show={show}
@@ -147,7 +129,7 @@ const AddTrip = ({show,handleClose}) => {
     keyboard={false}
     >
     <Modal.Header closeButton>
-        <Modal.Title>Add Trip Details</Modal.Title>
+        <Modal.Title>Edit Trip Details</Modal.Title>
     </Modal.Header>
     <Modal.Body>
         <form  method="post" onSubmit={handleSubmit}>
@@ -232,4 +214,4 @@ const AddTrip = ({show,handleClose}) => {
   )
 }
 
-export default AddTrip
+export default EditTrip
